@@ -6,7 +6,7 @@ from fabric.api import put
 from fabric.api import run
 
 
-env.hosts = ["34.234.201.238", "54.237.54.236"]
+env.hosts = ["54.90.48.122", "54.162.85.84"]
 def do_deploy(archive_path):
     """Distributes an archive to a web server.
 
@@ -46,3 +46,4 @@ def do_deploy(archive_path):
            format(name)).failed is True:
         return False
     return True
+
