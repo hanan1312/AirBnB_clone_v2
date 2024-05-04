@@ -8,7 +8,7 @@ from fabric.api import put
 from fabric.api import run
 
 
-env.hosts = ["34.234.201.238", "54.237.54.236"]
+env.hosts = ["54.90.48.122", "54.162.85.84"]
 def do_pack():
   """Generates a .tgz archive of the web_static folder contents.
 
@@ -81,3 +81,4 @@ def deploy():
     if file is None:
         return False
     return do_deploy(file)
+
